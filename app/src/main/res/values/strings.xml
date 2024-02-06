@@ -5,4 +5,11 @@
         hasta lujosas cabañas dotadas de todos los elementos para promover un descanso restauradordor. Visitanos</string>
     <string name="botonhomehoteles">Ver Hoteles</string>
 
+    <string name="menuopcion1">Ingles</string>
+    <string name="menuopcion2">Español</string>
+    <string name="menuopcion3">Italiano</string>
+    <string name="menuopcion4">Reseña</string>
+    <string name="menuopcion5">Acerca de</string>
+
+
 </resources>
