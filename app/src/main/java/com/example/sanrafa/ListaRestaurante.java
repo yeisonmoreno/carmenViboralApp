@@ -19,7 +19,7 @@ public class ListaRestaurante extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        recyclerViewrestaurantes = findViewById(R.id.listadinamicadehoteles);
+        recyclerViewrestaurantes = findViewById(R.id.listadimanicarestaurante);
         recyclerViewrestaurantes .setLayoutManager(new LinearLayoutManager(this,RecyclerView.VERTICAL,false));
 
         crearlistahoteles();
