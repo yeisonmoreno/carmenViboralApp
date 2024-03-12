@@ -18,23 +18,30 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        audio=MediaPlayer.create(this,R.raw.intro);
+        audio = MediaPlayer.create(this,R.raw.ceramicaintro);
         audio.start();
 
-        //crear un delay de tiempo para lanzar la app
+
+        //se detiene despues de los 8 segundos
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                audio.stop();
+            }
+        }, 8000);
         TimerTask inicioAPP=new TimerTask() {
             @Override
             public void run() {
 
-                //lanzar la nueva actividad
                 Intent nuevaActividad=new Intent(MainActivity.this,Home.class);
                 startActivity(nuevaActividad);
-
             }
         };
-
         Timer tiempo=new Timer();
         tiempo.schedule(inicioAPP,6000);
 
+
     }
+
 }

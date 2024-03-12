@@ -4,48 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green"
+    android:background="@color/white"
     tools:context=".Home">
-
     <ImageView
-        android:id="@+id/imagenhome"
+        android:layout_width="10950dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondohome"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/rio"
-        app:layout_constraintVertical_bias="0.1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:alpha="0.5"
+        android:adjustViewBounds="true"
+        />
+
 
     <TextView
         android:id="@+id/titulohome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/imagenhome"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:text="SAN RAFAEL-ANTIOQUIA"
+        android:text="Carmen Viboral -ANTIOQUIA"
         android:textSize="28dp"
         android:textStyle="bold"
-        android:textColor="@color/white"
-        app:layout_constraintVertical_bias="0.1"
+        android:textColor="@color/black"
+        android:alpha="0.6"
+        app:layout_constraintVertical_bias="0.2"
         />
 
     <Button
         android:id="@+id/botonhoteles"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/titulohome"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintVertical_bias="0.7"
         android:layout_marginHorizontal="20dp"
-        android:backgroundTint="@color/yellow"
+        android:backgroundTint="#805E0D"
         android:text="Hoteles"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/botonrestaurantes"
@@ -55,11 +57,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintVertical_bias="0"
         android:layout_marginHorizontal="20dp"
-        android:backgroundTint="@color/yellow"
+        android:backgroundTint="#805E0D"
         android:text="Restaurantes"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/botonsitios"
@@ -69,10 +71,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintVertical_bias="0"
         android:layout_marginHorizontal="20dp"
-        android:backgroundTint="@color/yellow"
+        android:backgroundTint="#805E0D"
         android:text="Sitios turisticos"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

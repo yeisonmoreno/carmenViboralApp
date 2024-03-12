@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">SanRafa</string>
-    <string name="titulohomehoteles">Hoteles en SanRafa</string>
-    <string name="descripcionhomehoteles">En nuestro pueblo encontrara alojamientos desde 35000 COP
-        hasta lujosas cabañas dotadas de todos los elementos para promover un descanso restauradordor. Visitanos</string>
+    <string name="titulositios">sitios para visitar</string>
+    <string name="titulohomehoteles">Hoteles en Carmen de Viboral</string>
+    <string name="titulorestaurantes">Restaurantes en Carmen de Viboral</string>
+    <string name="desrestaurantes">Los viajeros pueden encontrar tanto restaurantes tradicionales que sirven comida típica antioqueña como bandeja paisa, sancocho y tamales, hasta establecimientos más sofisticados con propuestas gourmet.</string>
+    <string name="descripcionhomehoteles">Carmen de Viboral ofrece una variedad de opciones de hospedaje para diferentes necesidades y presupuestos.
+        También hay posadas familiares y cabañas que permiten disfrutar de la naturaleza y tradiciones locales a buen precio..</string>
     <string name="botonhomehoteles">Ver Hoteles</string>
+    <string name="botonrestaurante">Ver Restaurantes</string>
+    <string name="resena">Carmen de Viboral es un pueblo en el departamento de Antioquia, Colombia. Se encuentra a 78 km de Medellín. Tiene alrededor de 40.000 habitantes y una extensión de 290 km2. Está a una altitud de 2.140 metros sobre el nivel del mar, por lo que tiene un clima frío. La economía se basa principalmente en la agricultura, con cultivos como café, plátano, caña de azúcar, frijol y maíz. También hay industria manufacturera y artesanías.</string>
+
 
     <string name="menuopcion1">Ingles</string>
     <string name="menuopcion2">Español</string>

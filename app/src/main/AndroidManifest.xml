@@ -13,6 +13,27 @@
         android:theme="@style/Theme.SanRafa"
         tools:targetApi="31">
         <activity
+            android:name=".Sitios2"
+            android:exported="false" />
+        <activity
+            android:name=".Sitiosampliados"
+            android:exported="false" />
+        <activity
+            android:name=".Restaurantesampliados"
+            android:exported="false" />
+        <activity
+            android:name=".Hotelesampliados"
+            android:exported="false" />
+        <activity
+            android:name=".ListaRestaurante"
+            android:exported="false" />
+        <activity
+            android:name=".ListaSitios"
+            android:exported="false" />
+        <activity
+            android:name=".Listahoteles"
+            android:exported="false" />
+        <activity
             android:name=".Acercade"
             android:exported="false" />
         <activity
@@ -29,8 +50,8 @@
             android:exported="false" />
         <activity
             android:name=".Home"
-            android:theme="@style/Theme.AppCompat"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

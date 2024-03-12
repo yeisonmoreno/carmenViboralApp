@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SanRafa</string>
-    <string name="titulohomehoteles">Hoteles en SanRafa </string>
-    <string name="descripcionhomehoteles">our hotels are the best</string>
-    <string name="botonhomehoteles">looking for Hoteles</string>
 
+    <string name="app_name">SanRafa</string>
+
+    <string name="titulositios">Places to Visit</string>
+
+    <string name="titulohomehoteles">Hotels in Carmen de Viboral</string>
+
+    <string name="titulorestaurantes">Restaurants in Carmen de Viboral</string>
+
+    <string name="desrestaurantes">Travelers can find both traditional restaurants serving typical Antioquian food such as bandeja paisa, sancocho, and tamales, as well as more sophisticated establishments with gourmet offerings.</string>
+
+    <string name="descripcionhomehoteles">Carmen de Viboral offers a variety of lodging options for different needs and budgets. There are also family inns and cabins that allow you to enjoy nature and local traditions at a good price.</string>
+
+    <string name="botonhomehoteles">See Hotels</string>
+
+    <string name="botonrestaurante">See Restaurants</string>
+
+    <string name="resena">Carmen de Viboral is a town in the department of Antioquia, Colombia. It is located 78 km from Medellín. It has around 40,000 inhabitants and an area of 290 km2. It is at an altitude of 2,140 meters above sea level, so it has a cold climate. The economy is mainly based on agriculture, with crops such as coffee, plantain, sugarcane, beans, and corn. There is also manufacturing industry and handicrafts.</string>
     <string name="menuopcion1">English</string>
     <string name="menuopcion2">Spanish</string>
     <string name="menuopcion3">Italian</string>

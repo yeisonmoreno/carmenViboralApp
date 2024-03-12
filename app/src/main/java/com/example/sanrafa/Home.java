@@ -25,38 +25,36 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
-        //asociar las variables creadas con los ID de los
-        //elementos que vienen desde XML
         botonHoteles=findViewById(R.id.botonhoteles);
         botonRestaurantes=findViewById(R.id.botonrestaurantes);
         botonSitios=findViewById(R.id.botonsitios);
 
-        //Escuchar eventos (clic en los botones)
-        botonHoteles.setOnClickListener(new View.OnClickListener() {
+        botonHoteles.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v) {
-                //aca escribo lo que quiera hacer cuando presionen el boton
-                //Toast.makeText(Home.this, "hizo clic en hoteles", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(Home.this,Hoteles.class);
+                Intent intent = new Intent(Home.this, Hoteles.class);
                 startActivity(intent);
             }
         });
-
-        botonRestaurantes.setOnClickListener(new View.OnClickListener() {
+        botonRestaurantes.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
-                Toast.makeText(Home.this, "Hizo click en el Restaurante", Toast.LENGTH_SHORT).show();
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(Home.this, Restaurantes.class);
+
+                startActivity(intent);
             }
         });
-
-        botonSitios.setOnClickListener(new View.OnClickListener() {
+        botonSitios.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Home.this, "hizo clic en Sitios Turisticos", Toast.LENGTH_SHORT).show();
+               Intent intent = new Intent(Home.this, Restaurantes.class);
+               startActivity(intent);
             }
         });
-
 
 
     }
@@ -71,26 +69,37 @@ public class Home extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         int itemSeleccionado=item.getItemId();
 
-        if(itemSeleccionado==R.id.opcion1){
+        if(itemSeleccionado==R.id.opcion1)
+        {
             this.cambiarIdioma("en");
             Intent intentIngles=new Intent(Home.this, Home.class);
             startActivity(intentIngles);
-        }else if(itemSeleccionado==R.id.opcion2){
+        }else if(itemSeleccionado==R.id.opcion2)
+        {
             this.cambiarIdioma("es");
             Intent intentIngles=new Intent(Home.this, Home.class);
             startActivity(intentIngles);
-        }else if(itemSeleccionado==R.id.opcion3){
-            Intent intentResena = new Intent(Home.this, Resena.class);
-            startActivity(intentResena);
-        }else if(itemSeleccionado==R.id.opcion4){
-            Toast.makeText(this, "presiono opcion 4", Toast.LENGTH_SHORT).show();
-        }else if(itemSeleccionado==R.id.opcion5){
+        }else if(itemSeleccionado==R.id.opcion3)
+        {
+            this.cambiarIdioma("it");
+            Intent intentIngles=new Intent(Home.this, Home.class);
+            startActivity(intentIngles);
+        }
+        else if(itemSeleccionado==R.id.opcion4)
+        {
+            Intent intentresena = new Intent(Home.this, Resena.class);
+            startActivity(intentresena);
+
+        }else if(itemSeleccionado==R.id.opcion5)
+        {
+            Intent intenAcerca = new Intent(Home.this,Acercade.class);
+            startActivity(intenAcerca);
             Toast.makeText(this, "presiono opcion 5", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }
-
-    public void cambiarIdioma(String idioma){
+    public void cambiarIdioma(String idioma)
+    {
         //configurar el idioma del telefono desde app
         Locale lenguaje=new Locale(idioma);
         Locale.setDefault(lenguaje);
@@ -98,7 +107,6 @@ public class Home extends AppCompatActivity {
         //configuramos globalmente el telefono
         Configuration configuracionTelefono=getResources().getConfiguration();
         configuracionTelefono.locale=lenguaje;
-
         //Ejecuto la configuracion establecida
         getBaseContext().getResources().updateConfiguration(configuracionTelefono,getBaseContext().getResources().getDisplayMetrics());
     }
