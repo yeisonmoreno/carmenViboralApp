@@ -19,7 +19,7 @@ public class Sitios2 extends AppCompatActivity {
         botonsitios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Sitios2.this,ListaRestaurante.class);
+                Intent intent = new Intent(Sitios2.this,ListaSitios.class);
                 startActivity(intent);
             }
         });

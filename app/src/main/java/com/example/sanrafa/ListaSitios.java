@@ -15,7 +15,7 @@ import com.example.sanrafa.moldes.Sitios;
 import java.util.ArrayList;
 
 public class ListaSitios extends AppCompatActivity {
-    ArrayList <Sitios> Listasitios = new ArrayList<>();
+    ArrayList <Sitios> listasitios = new ArrayList<>();
     RecyclerView recyclerViewsitios;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class ListaSitios extends AppCompatActivity {
 
         crearlistahoteles();
 
-        Hoteladaptador adaptador = new Hoteladaptador();
+        Sitioadaptador adaptador = new Sitioadaptador(listasitios);
         recyclerViewsitios.setAdapter(adaptador);
 
 
@@ -35,11 +35,11 @@ public class ListaSitios extends AppCompatActivity {
     }
 
     public void crearlistahoteles(){
-        Listasitios.add(new com.example.sanrafa.moldes.Sitios("Sitio lucuri","20000","42234" ,"por ahi cerca",4,R.drawable.hotellozeta));
-        Listasitios.add(new com.example.sanrafa.moldes.Sitios("Sitio murat","20000","42234" ,"por ahi cerca",4,R.drawable.hotelmurat));
-        Listasitios.add(new com.example.sanrafa.moldes.Sitios("Sitio lozeta","20000","42234" ,"por ahi cerca",4,R.drawable.hotellozeta));
-        Listasitios.add(new com.example.sanrafa.moldes.Sitios("Sitio tinny house","20000","42234" ,"por ahi cerca",4,R.drawable.hoteltinnyhouse));
-        Listasitios.add(new com.example.sanrafa.moldes.Sitios("Sitio villa claudia","20000","42234" ,"por ahi cerca",4,R.drawable.hotelvillaclaudia));
-        Listasitios.add(new com.example.sanrafa.moldes.Sitios("Sitio mirador rivera","20000","42234" ,"por ahi cerca",4,R.drawable.hotelmiradorrivera));
+        listasitios.add(new com.example.sanrafa.moldes.Sitios("Sitio lucuri","20000","42234" ,"por ahi cerca",4,R.drawable.hotellozeta));
+        listasitios.add(new com.example.sanrafa.moldes.Sitios("Sitio murat","20000","42234" ,"por ahi cerca",4,R.drawable.hotelmurat));
+        listasitios.add(new com.example.sanrafa.moldes.Sitios("Sitio lozeta","20000","42234" ,"por ahi cerca",4,R.drawable.hotellozeta));
+        listasitios.add(new com.example.sanrafa.moldes.Sitios("Sitio tinny house","20000","42234" ,"por ahi cerca",4,R.drawable.hoteltinnyhouse));
+        listasitios.add(new com.example.sanrafa.moldes.Sitios("Sitio villa claudia","20000","42234" ,"por ahi cerca",4,R.drawable.hotelvillaclaudia));
+        listasitios.add(new com.example.sanrafa.moldes.Sitios("Sitio mirador rivera","20000","42234" ,"por ahi cerca",4,R.drawable.hotelmiradorrivera));
     }
 }
